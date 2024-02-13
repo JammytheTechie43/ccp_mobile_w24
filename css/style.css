@@ -1,0 +1,49 @@
+h1{
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+h2{
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    color: #0e12ff;
+}
+
+h3{
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    color: #4f0606;
+}
+
+p{
+    line-height: 150%;
+}
+
+img{
+    border: 5px solid #0073e6;
+    padding: 10px;
+    margin: 20px;
+    
+}
+nav ul li.active a{
+    color: #0073e6;
+    font-weight: bold;
+}
+a[href="#main"]:not(:focus) 
+{
+    position: absolute;
+    left: -9999px;
+}
+a[href="#main"]:focus {
+    position: static;
+    left: auto;
+    width: auto;
+    height: auto;
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
